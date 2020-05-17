@@ -1,0 +1,12 @@
+.navbar{
+    background: rgb(180, 179, 179, 0.1);
+    position: absolute !important;
+}
+.title{
+    font-size: 30px;
+    font-family: 'Fjalla One', sans-serif;
+}
+body{
+    display: flex;
+    position: relative;
+}

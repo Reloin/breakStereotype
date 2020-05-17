@@ -1,0 +1,8 @@
+CREATE TABLE posts(
+	id int(10) NOT null PRIMARY KEY AUTO_INCREMENT,
+    subject varchar(300) NOT null,
+    truth varchar(300) NOT null,
+    agree int(6) NOT null,
+    disagree int(6) NOT null,
+    time_posted datetime NOT null
+);

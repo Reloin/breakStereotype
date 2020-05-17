@@ -1,0 +1,125 @@
+.anim_bg{
+    background: linear-gradient(to bottom right, #fe4164, #fea051);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -10;
+}
+.box_anim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.box_anim li{
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    animation: animate 9s linear infinite;
+    bottom: -150px;
+}
+
+/*Below here are css for bubbles*/
+.box_anim li:nth-child(1){
+    left: 86%;
+    width: 12rem;
+    height: 12rem;
+    animation-delay: 1.3s;
+}
+.box_anim li:nth-child(2){
+    left: 51%;
+    width: 8rem;
+    height: 8rem;
+    animation-delay: 8.2s;
+}
+.box_anim li:nth-child(3){
+    left: 18%;
+    width: 9rem;
+    height: 9rem;
+    animation-delay: 2.5s;
+}
+.box_anim li:nth-child(4){
+    left: 38%;
+    width: 10rem;
+    height: 10rem;
+    animation-delay: 5.4s;
+}
+.box_anim li:nth-child(5){
+    left: 72%;
+    width: 11rem;
+    height: 11rem;
+    animation-delay: 4.6s;
+}
+.box_anim li:nth-child(6){
+    left: 3%;
+    width: 8rem;
+    height: 8rem;
+    animation-delay: 0.2s;
+}
+.box_anim li:nth-child(7){
+    left: 60%;
+    width: 7rem;
+    height: 7rem;
+    animation-delay: 6.5s;
+}
+.box_anim li:nth-child(8){
+    left: 86%;
+    width: 12rem;
+    height: 12rem;
+    animation-delay: 7.2s;
+}
+.box_anim li:nth-child(9){
+    left: 46%;
+    width: 8rem;
+    height: 8rem;
+    animation-delay: 2.9s;
+}
+.box_anim li:nth-child(10){
+    left: 18%;
+    width: 12rem;
+    height: 12rem;
+    animation-delay: 7.4s;
+}
+.box_anim li:nth-child(11){
+    left: 33%;
+    width: 10rem;
+    height: 10rem;
+    animation-delay: 0.8s;
+}
+.box_anim li:nth-child(12){
+    left: 68%;
+    width: 11rem;
+    height: 11rem;
+    animation-delay: 0s;
+}
+.box_anim li:nth-child(13){
+    left: 3%;
+    width: 8rem;
+    height: 8rem;
+    animation-delay: 4.5s;
+}
+.box_anim li:nth-child(14){
+    left: 68%;
+    width: 7rem;
+    height: 7rem;
+    animation-delay: 2s;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0);
+        background: #e794c7;
+        opacity: 0.7;
+        scale: 1;
+    }
+    100%{
+        transform: translateY(-800px);
+        background: #f4bfff;
+        opacity: 0.1;
+        scale: 1.4;
+    }
+}

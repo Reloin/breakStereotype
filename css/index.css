@@ -1,0 +1,16 @@
+.btn{
+    float: right;
+    width: 100px;
+}
+#post_btn{
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.container{
+    font-size: large;
+    top: 10rem;
+    background: rgba(230, 230, 230, 0.521);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-radius: 25px;
+}
