@@ -6,3 +6,5 @@ CREATE TABLE posts(
     disagree int(6) NOT null,
     time_posted datetime NOT null
 );
+
+INSERT INTO `posts` (`id`, `subject`, `truth`, `agree`, `disagree`, `time_posted`) VALUES (NULL, 'boo', 'haha', '1', '0', NOW());
