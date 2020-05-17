@@ -1,16 +1,16 @@
-.btn{
-    float: right;
-    width: 100px;
-}
-#post_btn{
-    padding-left: 2vw;
-    padding-right: 2vw;
-}
 .container{
-    font-size: large;
-    top: 10rem;
-    background: rgba(230, 230, 230, 0.521);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    border-radius: 25px;
+    margin-top: 25vh;
+}
+.content{
+    background-color: rgba(250, 250, 250, 0.4);
+    margin-bottom: 4vh;
+    padding: 1.5em;
+    border-radius: 30px;
+    min-height: 10em;
+    height: auto;
+    font-size: x-large;
+}
+#next_post{
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
