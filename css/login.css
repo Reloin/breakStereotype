@@ -17,3 +17,10 @@ form input{
 .form-group{
     max-width: 30vw;
 }
+.acc-link{
+    text-decoration: underline;
+    font-size: medium;
+}
+ul li{
+    list-style: none;
+}

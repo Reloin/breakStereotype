@@ -1,6 +1,7 @@
 .navbar{
     background: rgb(180, 179, 179, 0.1);
     position: absolute !important;
+    display: inline !important;
 }
 .title{
     font-size: 30px;
@@ -10,11 +11,12 @@ body{
     display: flex;
     position: relative;
 }
-#post_btn{
+.nav-btn{
     padding-left: 1.5vw;
     padding-right: 1.5vw;
     float: right;
     width: 10em;
+    margin-left: 0.5em;
 }
 .container{
     margin-top: 25vh;

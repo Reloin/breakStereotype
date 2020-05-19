@@ -52,7 +52,7 @@ if (isset($_POST['signup-submit'])){
                     $hashPwd = password_hash($pwd, PASSWORD_DEFAULT);
                     mysqli_stmt_bind_param($stmt, "sss", $username, $mailuid, $hashPwd);
                     mysqli_stmt_execute($stmt);
-                    header("Location: /");
+                    header("Location: ../login.php");
                     exit();
                 }
             }
@@ -63,5 +63,5 @@ if (isset($_POST['signup-submit'])){
 }
 else{
     header("Location: ../signup.php");
-    exit;
+    exit();
 }

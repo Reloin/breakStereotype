@@ -19,25 +19,26 @@
 
     <!-- Login form here -->
     <div class="container content d-flex justify-content-center col-6">
-    <form class="login_field" action="includes/login.inc.php" method="post">
-        <h2 class="text-center">Login</h2>
-        <div class="form-group">
-            <label for="mailuid">Email address</label>
-            <input type="email" class="form-control" name="mailuid" placeholder="Email address">
-        </div>
-        <div class="form-group">
-            <label for="pwd">Password</label>
-            <input type="password" class="form-control" name="pwd" placeholder="Password">
-        </div>
-        <button type="submit" class="btn btn-primary">Sign up</button>
+        <form class="login_field" action="includes/login.inc.php" method="post">
+            <h2 class="text-center">Login</h2>
+            <div class="form-group">
+                <label for="mailuid">Email address</label>
+                <input type="text" class="form-control" name="mailuid" placeholder="Email address">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password</label>
+                <input type="password" class="form-control" name="pwd" placeholder="Password">
+            </div>
+            <button name="login-submit" type="submit" class="btn btn-primary">Login</button>
+            <ul>
+                <li><a class="acc-link" href="signup.php">Forgot password?</a></li>
+                <li><a class="acc-link" href="signup.php">Create an account</a></li>
+            </ul>
         </form>
+        
     </div>
+
+    <?php include 'includes/bar_anim.php';?>
     
-    <!--Background component -->
-    <div class="anim_bg">
-        <ul class="box_anim">
-            <li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-        </ul>
-    </div>
 </body>
 </html>

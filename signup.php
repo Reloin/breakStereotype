@@ -36,14 +36,11 @@
                 <input type="password" class="form-control" name="re-pwd" placeholder="Re-enter Password">
             </div>
             <button name="signup-submit" type="submit" class="btn btn-primary">Sign up</button>
+            <a class="acc-link" href="login.php">Already a member?</a>
         </form>
     </div>
     
-    <!--Background component -->
-    <div class="anim_bg">
-        <ul class="box_anim">
-            <li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-        </ul>
-    </div>
+    <!-- animation stuff here -->
+    <?php include 'includes/bar_anim.php';?>
 </body>
 </html>
