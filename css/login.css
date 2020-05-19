@@ -1,0 +1,19 @@
+
+.container{
+    max-width: 50vw !important;
+    margin-top: 30vh;
+}
+.login_field button{
+    width: 100%;
+}
+form input{
+    margin-bottom: 1vh;
+    padding: 0.5em;
+    background-color: rgba(255, 255, 255, 0.438) !important;
+    
+    border-radius: 30px;
+    border: none !important;
+}
+.form-group{
+    max-width: 30vw;
+}

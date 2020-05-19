@@ -1,11 +1,3 @@
-<?php
-include 'includes/db.php';
-$sql = "SELECT subject, truth FROM posts ORDER BY rand() LIMIT 1;";
-$result = mysqli_query($conn, $sql);
-if($result){
-    $data = mysqli_fetch_array($result);
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,32 +7,35 @@ if($result){
 
     <!--CSS placed here-->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bubble_anim.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bar_anim.css">
+    <link rel="stylesheet" href="css/login.css">
 
     <!--Bootstrap here-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
     <?php include 'includes/header.php'; ?>
 
-    <!-- posts goes here -->
-    <div class="container text-center">
-        <div class="content align-middle" id="subject">
-        <?php echo $data['subject'];?>
+    <!-- Login form here -->
+    <div class="container content d-flex justify-content-center col-6">
+    <form class="login_field" action="includes/login.inc.php" method="post">
+        <h2 class="text-center">Login</h2>
+        <div class="form-group">
+            <label for="mailuid">Email address</label>
+            <input type="email" class="form-control" name="mailuid" placeholder="Email address">
         </div>
-        <div class="content align-middle" id="truth">
-        <?php echo $data['truth'];?>
+        <div class="form-group">
+            <label for="pwd">Password</label>
+            <input type="password" class="form-control" name="pwd" placeholder="Password">
         </div>
-        <button type="button" class="btn btn-danger text-center" id="next_post">Another</button>
+        <button type="submit" class="btn btn-primary">Sign up</button>
+        </form>
     </div>
     
     <!--Background component -->
     <div class="anim_bg">
         <ul class="box_anim">
-            <li></li><li></li><li></li><li></li><li></li><li></li><li></li>
             <li></li><li></li><li></li><li></li><li></li><li></li><li></li>
         </ul>
     </div>

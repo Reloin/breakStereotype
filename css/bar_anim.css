@@ -1,0 +1,79 @@
+.anim_bg{
+    background: linear-gradient(to bottom right, #fe4164, #fea051);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -10;
+}
+.box_anim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0.2;
+}
+.box_anim li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    animation: animate 20s linear infinite;
+    bottom: -150px;
+}
+
+/*Below here are css for bubbles*/
+.box_anim li:nth-child(1){
+    top: 14%;
+    width: 80vw;
+    height: 13vh;
+    animation-delay: 0s;
+}
+.box_anim li:nth-child(2){
+    top: 28.5%;
+    width: 78vw;
+    height: 13vh;
+    animation-delay: 11.5s;
+}
+.box_anim li:nth-child(3){
+    top: 43%;
+    width: 95vw;
+    height: 13vh;
+    animation-delay: 1.5s;
+}
+.box_anim li:nth-child(4){
+    top: 57%;
+    width: 60vw;
+    height: 13vh;
+    animation-delay: 12.3s;
+}
+.box_anim li:nth-child(5){
+    top: 71%;
+    width: 100vw;
+    height: 13vh;
+    animation-delay: 1s;
+}
+.box_anim li:nth-child(6){
+    top: 85.5%;
+    width: 88vw;
+    height: 13vh;
+    animation-delay: 13.2s;
+}
+.box_anim li:nth-child(7){
+    top: 100%;
+    width: 94vw;
+    height: 13vh;
+    animation-delay: 3.3s;
+}
+@keyframes animate{
+    0%{
+        transform: translateX(100vw);
+        background: #e794c7;
+    }
+    100%{
+        transform: translateX(-100vw);
+        background: #f4bfff;
+    }
+}
