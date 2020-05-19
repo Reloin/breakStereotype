@@ -1,6 +1,6 @@
 .anim_bg{
     background: linear-gradient(to bottom right, #fe4164, #fea051);
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100vh;
     z-index: -10;

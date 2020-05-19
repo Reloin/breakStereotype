@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/bar_anim.css";>
+<link rel="stylesheet" href="../css/bar_anim.css";>
 
 <!--Background component -->
 <div class="anim_bg">

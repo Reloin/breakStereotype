@@ -16,6 +16,7 @@ body{
     padding-right: 1.5vw;
     float: right;
     width: 10em;
+    margin-top: 0.5em;
     margin-left: 0.5em;
 }
 .container{
@@ -26,7 +27,7 @@ body{
     margin-bottom: 4vh;
     padding: 1.5em;
     border-radius: 30px;
-    min-height: 10em;
+    min-height: 8em;
     height: auto;
     font-size: x-large;
 }
