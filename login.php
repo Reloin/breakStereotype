@@ -18,7 +18,7 @@
     <?php include 'includes/header.php'; ?>
 
     <!-- Login form here -->
-    <div class="container content d-flex justify-content-center col-6">
+    <div class="container content d-flex justify-content-center col-lg-3">
         <form class="login_field" action="includes/login.inc.php" method="post">
             <h2 class="text-center">Login</h2>
             <div class="form-group">

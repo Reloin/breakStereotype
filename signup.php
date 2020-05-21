@@ -18,11 +18,11 @@
     <?php include 'includes/header.php';?>
 
     <!-- Login form here -->
-    <div class="container content d-flex justify-content-center col-6" style="margin-top: 23vh;">
+    <div class="container content d-flex justify-content-center col-lg-3" style="margin-top: 23vh;">
         
         <form class="login_field" action="includes/signup.inc.php" method="post">
-        <h2 class="text-center">Sign up</h2>
-            <div class="form-group">
+            <h2 class="text-center">Sign up</h2>
+                <div class="form-group">
                 <label for="mailuid">Username</label>
                 <input type="text" class="form-control" name="uid" placeholder="Username">
             </div>
