@@ -1,7 +1,6 @@
 .navbar{
     background: rgb(180, 179, 179, 0.1);
     position: absolute !important;
-    display: inline !important;
 }
 .title{
     font-size: 30px;
