@@ -5,6 +5,12 @@ $result = mysqli_query($conn, $sql);
 if($result){
     $data = mysqli_fetch_array($result);
 }
+if(isset($_GET['next'])) { 
+    $result = mysqli_query($conn, $sql);
+    if($result){
+        $data = mysqli_fetch_array($result);
+    }
+} 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,6 +32,7 @@ if($result){
     <?php include 'includes/header.php'; ?>
 
     <!-- posts goes here -->
+    <form method="get" class="container-fluid">
     <div class="container text-center">
         <div class="content align-middle" id="subject">
         <?php echo $data['subject'];?>
@@ -33,8 +40,9 @@ if($result){
         <div class="content align-middle" id="truth">
         <?php echo $data['truth'];?>
         </div>
-        <button type="button" class="btn btn-danger text-center" id="next_post">Another</button>
+        <button type="submit" name="next" class="btn btn-danger text-center" id="next_post">Another</button>
     </div>
+    </form>
     
     <!-- animation stuff here -->
     <?php include 'includes/bubble_anim.php';?>

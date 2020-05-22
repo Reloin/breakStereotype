@@ -1,0 +1,15 @@
+.content{
+    font-size: 1rem;
+}
+textarea{
+    width: 70%;
+    height: 20vh;
+    margin: 1em !important;
+    resize: none !important;
+    padding: 1.5em 1em 1.5em 1em;
+    border-radius: 30px;
+    border: none;
+}
+.sub-btn{
+    padding-inline: 5em !important;
+}

@@ -25,13 +25,13 @@ if(isset($_POST["login-submit"])){
                 if(!$pwdCheck){
                     header("Location: ../login.php?error=wrongpwd");
                     exit();
-                }
+                }//successfully login here
                 else if($pwdCheck){
                     session_start();
                     $_SESSION['id'] = $row['user_id'];
                     $_SESSION['name'] = $row['username'];
 
-                    header("Location: ../");
+                    header("Location: ../post.php");
                     exit();
                 }
                 else{

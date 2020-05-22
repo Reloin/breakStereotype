@@ -18,8 +18,8 @@
     <?php include 'includes/header.php'; ?>
 
     <!-- Login form here -->
-    <div class="container content d-flex justify-content-center col-lg-3">
-        <form class="login_field" action="includes/login.inc.php" method="post">
+    <div class="container content d-flex justify-content-center col-lg-3 col-md-6 col-sm-10">
+        <form class="acc_field" action="includes/login.inc.php" method="post">
             <h2 class="text-center">Login</h2>
             <div class="form-group">
                 <label for="mailuid">Email address</label>
@@ -30,7 +30,7 @@
                 <input type="password" class="form-control" name="pwd" placeholder="Password">
             </div>
             <button name="login-submit" type="submit" class="btn btn-primary">Login</button>
-            <ul>
+            <ul class="links">
                 <li><a class="acc-link" href="signup.php">Forgot password?</a></li>
                 <li><a class="acc-link" href="signup.php">Create an account</a></li>
             </ul>

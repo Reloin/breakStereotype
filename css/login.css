@@ -1,9 +1,4 @@
-
-.container{
-    max-width: 50vw !important;
-    margin-top: 30vh;
-}
-.login_field button{
+.acc_field button{
     width: 100%;
 }
 form input{
@@ -21,6 +16,8 @@ form input{
     text-decoration: underline;
     font-size: medium;
 }
-ul li{
+.links li{
     list-style: none;
+    margin-left: auto;
+    margin-right: auto;
 }
