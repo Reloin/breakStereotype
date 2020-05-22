@@ -1,9 +1,10 @@
 .content{
     font-size: 1rem;
+    width: 100%;
 }
 textarea{
     width: 70%;
-    height: 20vh;
+    height: 15rem;
     margin: 1em !important;
     resize: none !important;
     padding: 1.5em 1em 1.5em 1em;
