@@ -52,7 +52,20 @@ if (isset($_POST['signup-submit'])){
                     $hashPwd = password_hash($pwd, PASSWORD_DEFAULT);
                     mysqli_stmt_bind_param($stmt, "sss", $username, $mailuid, $hashPwd);
                     mysqli_stmt_execute($stmt);
-                    header("Location: ../login.php");
+
+                    //here to login user after sign up
+                    $cmd = "SELECT user_id FROM users WHERE username=?";
+                    mysqli_stmt_prepare($stmt, $cmd);
+                    mysqli_stmt_bind_param($stmt, "s", $username);
+                    mysqli_stmt_execute($stmt);
+                    $result = mysqli_stmt_get_result($stmt);
+                    $row = mysqli_fetch_assoc($result);
+
+                    //start session
+                    session_start();
+                    $_SESSION['id'] = $row['user_id'];
+                    $_SESSION['name'] = $row['username'];
+                    header("Location: ../");
                     exit();
                 }
             }
