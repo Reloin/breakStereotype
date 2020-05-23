@@ -24,16 +24,16 @@
             <h2 class="text-center">Sign up</h2>
                 <div class="form-group">
                 <label for="mailuid">Username</label>
-                <input type="text" class="form-control" name="uid" placeholder="Username">
+                <input type="text" class="form-control" name="uid" placeholder="Username" require>
             </div>
             <div class="form-group">
                 <label for="mailuid">Email address</label>
-                <input type="email" class="form-control" name="mailuid" placeholder="Email address">
+                <input type="email" class="form-control" name="mailuid" placeholder="Email address" require>
             </div>
             <div class="form-group">
                 <label for="pwd">Password</label>
-                <input type="password" class="form-control" name="pwd" placeholder="Password">
-                <input type="password" class="form-control" name="re-pwd" placeholder="Re-enter Password">
+                <input type="password" class="form-control" name="pwd" placeholder="Password" require>
+                <input type="password" class="form-control" name="re-pwd" placeholder="Re-enter Password" require>
             </div>
             <button name="signup-submit" type="submit" class="btn btn-primary">Sign up</button>
             <a class="acc-link links" href="login.php">Already a member?</a>

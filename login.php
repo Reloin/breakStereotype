@@ -23,11 +23,11 @@
             <h2 class="text-center">Login</h2>
             <div class="form-group">
                 <label for="mailuid">Email address</label>
-                <input type="text" class="form-control" name="mailuid" placeholder="Email address">
+                <input type="text" class="form-control" name="mailuid" placeholder="Email address" require>
             </div>
             <div class="form-group">
                 <label for="pwd">Password</label>
-                <input type="password" class="form-control" name="pwd" placeholder="Password">
+                <input type="password" class="form-control" name="pwd" placeholder="Password" require>
             </div>
             <button name="login-submit" type="submit" class="btn btn-primary">Login</button>
             <ul class="links">

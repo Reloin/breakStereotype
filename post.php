@@ -17,9 +17,9 @@
     <?php include 'includes/header.php';?>
     <div class="text-center container col-lg-6 col-md-9 col-sm-10">
         <form class="content" action="includes/post.inc.php" method="post">
-            <textarea type="text" name="subject" maxlength="280" placeholder="People thought that ..."></textarea>
+            <textarea type="text" name="subject" maxlength="280" placeholder="People thought that ..." require></textarea>
             <br>
-            <textarea type="text" name="truth" maxlength="280" placeholder="In actual truth ..."></textarea>
+            <textarea type="text" name="truth" maxlength="280" placeholder="In actual truth ..." require></textarea>
             <br>
             <button class="btn btn-info sub-btn" name="submit-post" type="submit">Submit</button>
         </form>
