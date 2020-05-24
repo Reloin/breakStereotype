@@ -28,14 +28,14 @@ if (isset($_POST['signup-submit'])){
         exit();
     }
     else{
-        $cmd = "SELECT username FROM users WHERE username=?";
+        $cmd = "SELECT username FROM users WHERE username=? OR email=?";
         $stmt = mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt, $cmd)){
-            header("Location: ../signup.php?error=sqlerror&uid=".$username."&mail=".$mailuid);
+            header("Location: ../signup.php?error=sqlerror&uid");
             exit();
         }
         else {
-            mysqli_stmt_bind_param($stmt, "s", $username);
+            mysqli_stmt_bind_param($stmt, "ss", $username, $mailuid);
             mysqli_stmt_execute($stmt);
             mysqli_stmt_store_result($stmt);
             if(mysqli_stmt_num_rows($stmt) > 0){

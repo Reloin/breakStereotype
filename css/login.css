@@ -5,6 +5,7 @@ form input{
     margin-bottom: 1vh;
     padding: 0.5em;
     background-color: rgba(255, 255, 255, 0.438) !important;
+    width: 100%;
     
     border-radius: 30px;
     border: none !important;
@@ -20,4 +21,10 @@ form input{
     list-style: none;
     margin-left: auto;
     margin-right: auto;
+}
+.acc_field label{
+    font-size: 1.6rem;
+}
+p{
+    font-size: .7rem;
 }
