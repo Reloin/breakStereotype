@@ -7,7 +7,7 @@ if(isset($_POST["submit-post"])){
     $truth = $_POST["truth"];
 
     if(empty($subject) || empty($truth)){
-        header("Location: ../post.php");
+        header("Location: ../post.php?error=empty");
         exit();
     }
     }else{
@@ -20,7 +20,7 @@ if(isset($_POST["submit-post"])){
         else{
             mysqli_stmt_bind_param($stmt, "ssis", $subject, $truth, $_SESSION['id'], date('Y-m-d H:i:s'));
             mysqli_stmt_execute($stmt);
-            header("Location: ../post.php");
+            header("Location: ../post.php?post=true");
             exit();
     }
     

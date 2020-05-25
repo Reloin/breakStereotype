@@ -21,6 +21,11 @@
     <div class="container content d-flex justify-content-center col-lg-3 col-md-6 col-sm-10">
         <form class="acc_field" action="includes/login.inc.php" method="post">
             <h2 class="text-center">Login</h2>
+            <?php 
+            if(isset($_GET["error"])){
+                echo "<p id='error-msg'>Email not registered or wrong password</p>";
+            }
+            ?>
             <div class="form-group">
                 <label for="mailuid">Email address</label>
                 <input type="text" class="form-control" name="mailuid" placeholder="Email address" require>

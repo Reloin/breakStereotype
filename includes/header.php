@@ -20,7 +20,7 @@ session_start();
             echo '<li class="nav-item"><a class="nav-btn btn btn-outline-dark" href="includes/logout.inc.php" role="button">Logout</a></li>';
         }
         else{
-            echo '<li class="nav-item"><a class="nav-btn btn btn-outline-light" href="login.php" role="button">Post</a></li>';
+            echo '<li class="nav-item"><a class="nav-btn btn btn-outline-light" href="login.php" role="button">Login to post</a></li>';
         }
     ?>
     </ul>

@@ -8,7 +8,7 @@ if (isset($_POST['signup-submit'])){
     $repwd = $_POST['re-pwd'];
 
     if(empty($username) || empty($mailuid) || empty($pwd) || empty($repwd)){
-        header("Location: ../signup.php?error=emptyfields&uid=".$username."&mail=".$mailuid);
+        header("Location: ../signup.php?error=emptyfields");
         exit();
     }
     else if(!filter_var($mailuid, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z0-9]*$/", $username)){
@@ -16,15 +16,15 @@ if (isset($_POST['signup-submit'])){
         exit();
     }
     else if(!filter_var($mailuid, FILTER_VALIDATE_EMAIL)){
-        header("Location: ../signup.php?error=invalidmail&uid=".$username);
+        header("Location: ../signup.php?error=invalidmail");
         exit();
     }
     else if(!preg_match("/^[a-zA-Z0-9]*$/", $username)){
-        header("Location: ../signup.php?error=invaliduid&mail=".$mailuid);
+        header("Location: ../signup.php?error=invaliduid");
         exit();
     }
     else if($pwd !== $repwd){
-        header("Location: ../signup.php?error=passwordcheck&uid=".$username."&mail=".$mailuid);
+        header("Location: ../signup.php?error=passwordcheck");
         exit();
     }
     else{
@@ -39,13 +39,13 @@ if (isset($_POST['signup-submit'])){
             mysqli_stmt_execute($stmt);
             mysqli_stmt_store_result($stmt);
             if(mysqli_stmt_num_rows($stmt) > 0){
-                header("Location: ../signup.php?error=nametaken&uid=".$username."&mail=".$mailuid);
+                header("Location: ../signup.php?error=nametaken");
                 exit();
             }
             else{
                 $cmd = "INSERT INTO users(username, email, password) VALUES (?, ?, ?)";
                 if(!mysqli_stmt_prepare($stmt, $cmd)){
-                    header("Location: ../signup.php?error=sqlerror&uid=".$username."&mail=".$mailuid);
+                    header("Location: ../signup.php?error=sqlerror&uid");
                     exit();
                 }
                 else{
@@ -65,7 +65,7 @@ if (isset($_POST['signup-submit'])){
                     session_start();
                     $_SESSION['id'] = $row['user_id'];
                     $_SESSION['name'] = $row['username'];
-                    header("Location: ../");
+                    header("Location: ../?signup=true");
                     exit();
                 }
             }

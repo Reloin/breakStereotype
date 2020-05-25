@@ -25,6 +25,14 @@ form input{
 .acc_field label{
     font-size: 1.6rem;
 }
-p{
+.advice{
     font-size: .7rem;
+}
+#error-msg{
+    background: rgba(233, 75, 75, 0.466);
+    font-size: 0.8rem;
+    padding: 0.3rem;
+    color: white;
+    border-radius: 30px;
+    padding-left: 1rem;
 }
