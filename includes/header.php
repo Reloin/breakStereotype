@@ -4,7 +4,7 @@ session_start();
 <!-- navbar goes here -->
 <nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="/">
-        <h1 class="title">Break Stereotype</h1>
+        <h1 class="title">Prejude</h1>
     </a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
         <span class="navbar-toggler-icon"></span>

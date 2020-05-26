@@ -3,7 +3,7 @@
 $dbServername = "localhost";
 $dbUsername = "root";
 $dbPassword = "";
-$dbName = "break_stereotype";
+$dbName = "prejude";
 
 $conn = mysqli_connect($dbServername,$dbUsername,$dbPassword,$dbName);
 

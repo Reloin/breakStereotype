@@ -2,15 +2,14 @@
 session_start();
 if(isset($_POST["submit-post"])){
     require "db.php";
-
-    $subject = $_POST["subject"];
-    $truth = $_POST["truth"];
+    $subject = $_POST['subject'];
+    $truth = $_POST['truth'];
 
     if(empty($subject) || empty($truth)){
         header("Location: ../post.php?error=empty");
         exit();
     }
-    }else{
+    else{
         $cmd = "INSERT INTO posts(subject, truth, agree, disagree, author_id, time_posted) VALUES (?, ?, 0, 0, ?, ?)";
         $stmt = mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt, $cmd)){
@@ -23,5 +22,5 @@ if(isset($_POST["submit-post"])){
             header("Location: ../post.php?post=true");
             exit();
     }
-    
+    }
 }
