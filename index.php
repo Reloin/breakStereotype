@@ -49,7 +49,20 @@ if(isset($_GET['next'])) {
     <!-- <form method="get" class="container-fluid"> -->
     <div class="container text-center">
         <div id="post">
-            <?php include "includes/view.php"; ?>
+        <?php
+        $sql = "SELECT subject, truth FROM posts ORDER BY RAND() LIMIT 1;";
+        $result = mysqli_query($conn, $sql);
+        if($result){
+            $data = mysqli_fetch_array($result); 
+            ?>
+            <div class="content align-middle" id="subject">
+            <?php echo $data['subject'];?>
+            </div>
+            <div class="content align-middle" id="truth">
+            <?php echo $data['truth'];?>
+            </div>
+
+        <?php } ?>
         </div>
         <button type="submit" name="next" class="btn btn-danger text-center" id="next_post">Another</button>
     </div>
